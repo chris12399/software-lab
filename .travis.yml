@@ -16,9 +16,9 @@ script:
   provider: heroku
   api_key: 
     secure: 05456bff-67aa-491b-8415-68132ee87f3a
-  app: test-my-travisci-project
+  app: examplelab4
   on:
-    repo: jimting/GitProjectTutorialExample
+    repo: chris12399/software-lab
   #Setting your heroku Procfile here!!!
   run:
     "web: gunicorn app_run:app"
