@@ -12,13 +12,13 @@ script: true
 script: 
   - python TestCalculator.py
 
-  deploy:
-  provider: heroku
-  api_key: 
-    secure: 05456bff-67aa-491b-8415-68132ee87f3a
-  app: examplelab4
-  on:
-    repo: chris12399/software-lab
+deploy:
+provider: heroku
+api_key: 
+  secure: 05456bff-67aa-491b-8415-68132ee87f3a
+app: examplelab4
+on:
+  repo: chris12399/software-lab
   #Setting your heroku Procfile here!!!
-  run:
-    "web: gunicorn app_run:app"
+run:
+  "web: gunicorn app_run:app"
